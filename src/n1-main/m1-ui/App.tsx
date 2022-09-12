@@ -1,11 +1,17 @@
 import React from 'react';
 import logo from '../../logo.svg';
 import './App.css';
+import {HashRouter} from 'react-router-dom';
+import {Header} from './header/Header';
+import {Pages} from './routes/Pages';
 
 function App() {
   return (
     <div className="App">
-      Learning cards
+      <HashRouter>
+          <Header/>
+          <Pages/>
+      </HashRouter>
     </div>
   );
 }
